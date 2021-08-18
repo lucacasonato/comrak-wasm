@@ -1,6 +1,6 @@
 # comrak-wasm
 
-[![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/comrak@0.1.0/mod.ts)
+[![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/comrak@0.1.1/mod.ts)
 
 WASM bindings for the
 [comrak markdown renderer](https://github.com/kivikakk/comrak).
@@ -13,7 +13,7 @@ WASM bindings for the
 ## How to use
 
 ```ts
-import * as comrak from "https://deno.land/x/comrak@0.1.0/mod.ts";
+import * as comrak from "https://deno.land/x/comrak@0.1.1/mod.ts";
 await comrak.init();
 
 comrak.markdownToHTML("Hello, **世界**!"); // <p>Hello, <strong>世界</strong>!</p>\n
@@ -21,7 +21,7 @@ comrak.markdownToHTML("Hello, **世界**!"); // <p>Hello, <strong>世界</strong
 
 The second argument is an options bag that can be used to customize parsing
 behaviour. The exact arguments can be found on the
-[deno doc](https://doc.deno.land/https/deno.land/x/comrak@0.1.0/mod.ts) page.
+[deno doc](https://doc.deno.land/https/deno.land/x/comrak@0.1.1/mod.ts) page.
 
 ## Thanks
 

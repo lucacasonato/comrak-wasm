@@ -6,6 +6,10 @@ use js_sys::TypeError;
 use serde::Deserialize;
 use wasm_bindgen::prelude::*;
 
+// Use `wee_alloc` as the global allocator.
+#[global_allocator]
+static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
+
 #[derive(Deserialize)]
 struct FlatComrakOptions {
     extension_autolink: bool,
